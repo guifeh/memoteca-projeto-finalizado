@@ -1,8 +1,8 @@
 const URL_BASE = "http://localhost:3000"
 
-const converterStringParaData = (dataString) =>{
+const converterStringParaData = (dataString) => {
   const [ano, mes, dia] = dataString.split("-")
-  return new Date(Date.UTC(ano, mes -1, dia))
+  return new Date(Date.UTC(ano, mes - 1, dia))
 }
 
 const api = {
@@ -12,7 +12,7 @@ const api = {
       const pensamentos = await response.data
 
       return pensamentos.map(pensamento => {
-        return{
+        return {
           ...pensamento,
           data: new Date(pensamento.data)
         }
@@ -27,6 +27,7 @@ const api = {
   async salvarPensamento(pensamento) {
     try {
       const data = converterStringParaData(pensamento.data)
+
       const response = await axios.post(`${URL_BASE}/pensamentos`, {
         ...pensamento,
         data: data.toISOString()
@@ -44,7 +45,7 @@ const api = {
       const response = await axios.get(`${URL_BASE}/pensamentos/${id}`)
       const pensamento = await response.data
 
-      return{
+      return {
         ...pensamento,
         data: new Date(pensamento.data)
       }
@@ -92,9 +93,9 @@ const api = {
     }
   },
   
-  async atualizarFavorito(id, favorito){
+  async atualizarFavorito(id, favorito) {
     try {
-      const response = await axios.patch(`${URL_BASE}/pensamentos/${id}`, {favorito})
+      const response = await axios.patch(`${URL_BASE}/pensamentos/${id}`, { favorito })
       return response.data
     } catch (error) {
       alert("Erro ao atualizar favorito")
