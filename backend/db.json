@@ -2,28 +2,28 @@
   "pensamentos": [
     {
       "id": "2a56",
-      "favorito": true,
+      "favorito": false,
       "conteudo": "Vc faz TI? Conserta meu celular!",
       "autoria": "Grupo da família",
       "data": "2024-08-01T00:00:00.000Z"
     },
     {
       "id": "4c7d",
-      "favorito": true,
-      "conteudo": "Da vida reclama, mas sem ela não vive!",
-      "autoria": "Mestre Yoda",
-      "data": "2024-08-02T00:00:00.000Z"
+      "conteudo": "Como? Eu não sei, mas está funcionando!",
+      "autoria": "Dev",
+      "data": "2024-11-18",
+      "favorito": true
     },
     {
       "id": "68uy",
-      "favorito": true,
+      "favorito": false,
       "conteudo": "Esse é de laranja que parece de limão, mas tem gosto de tamarindo!",
       "autoria": "Chaves",
       "data": "2024-08-03T00:00:00.000Z"
     },
     {
       "id": "b807",
-      "favorito": true,
+      "favorito": false,
       "conteudo": "Melhor professor, o fracasso é!",
       "autoria": "Mestre Yoda",
       "data": "2024-08-04T00:00:00.000Z"
@@ -83,18 +83,6 @@
       "conteudo": "Na minha máquina funciona!",
       "autoria": "Dev",
       "data": "2024-08-12T00:00:00.000Z"
-    },
-    {
-      "id": "3e67",
-      "conteudo": "fdsfafdgf",
-      "autoria": "gsdfgsdfg",
-      "data": "2024-08-15T00:00:00.000Z"
-    },
-    {
-      "id": "c724",
-      "conteudo": "Testando formato de data",
-      "autoria": "Dev",
-      "data": "2024-08-01"
     }
   ]
 }
